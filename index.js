@@ -22,6 +22,9 @@ mongoConnect();
 
 
 app.use('/api/v1', routes);
+app.use('/api/v1', (req,res)=>{
+    res.send("flutter não presta");
+});
 
 
 app.listen(process.env.PORT || 3000, () => console.log('Server running on http://localhost:' + (process.env.PORT || 3000) + '/'));
