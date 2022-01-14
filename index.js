@@ -1,4 +1,4 @@
-//require('dotenv').config();
+require('dotenv').config();
 const express = require('express');
 const mongoose = require('mongoose');
 const cors = require('cors');
@@ -27,6 +27,5 @@ app.use('/api/v1', (req,res)=>{
 });
 
 
-//app.listen(process.env.PORT || 3000, () => console.log('Server running on http://localhost:' + (process.env.PORT || 3000) + '/'));
+app.listen(process.env.PORT || 3000, () => console.log('Server running on http://localhost:' + (process.env.PORT || 3000) + '/'));
 
-app.listen(process.env.PORT );
